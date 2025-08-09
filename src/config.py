@@ -48,7 +48,7 @@ N_FUTURE = 1   # Number of future days to predict
 
 # Model parameters
 BATCH_SIZE = 32
-EPOCHS = 50
+EPOCHS = 100
 VALIDATION_SPLIT = 0.2 # Use 20% of the training data for validation
 
 # Paths for saving models and results
