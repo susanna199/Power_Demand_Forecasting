@@ -51,6 +51,9 @@ BATCH_SIZE = 32
 EPOCHS = 100
 VALIDATION_SPLIT = 0.2 # Use 20% of the training data for validation
 
+MODEL_TO_TRAIN = "gru"   # or "lstm", "transformer", etc.
+N_PAST = 30              # number of past timesteps used as input
+
 # Paths for saving models and results
 SAVED_MODELS_DIR = os.path.join(PROJECT_ROOT, 'saved_models')
 RESULTS_DIR = os.path.join(PROJECT_ROOT, 'results')

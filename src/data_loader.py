@@ -32,6 +32,11 @@ def load_and_preprocess_data():
 
     return df
 
+def get_original_dates(file_path=PROCESSED_DATA_FILE):
+    """Load original date column from the processed dataset."""
+    df = pd.read_csv(file_path, parse_dates=['date'])  # lowercase
+    return df['date']
+
 def create_sequences(data):
     """
     Creates time-series sequences suitable for LSTM/GRU models.
